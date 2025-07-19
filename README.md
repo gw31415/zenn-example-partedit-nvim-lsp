@@ -1,4 +1,4 @@
-# Neovim Minimal Configuration for Testing
+# Neovim LSP with `vim-partedit`
 
 ## Dependencies
 
@@ -7,7 +7,7 @@
 ## Usage
 
 ```bash
-nix develop .  # Enter the development environment
+nix develop . --no-update-lock-file  # Enter the development environment
 
 nvim  # Start Neovim
 ```

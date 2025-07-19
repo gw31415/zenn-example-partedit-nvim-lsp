@@ -1,1 +1,1 @@
--- Add your Neovim configuration here
+vim.lsp.enable 'lua_ls'

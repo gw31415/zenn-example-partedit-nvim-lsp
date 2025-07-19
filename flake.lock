@@ -37,7 +37,8 @@
     "root": {
       "inputs": {
         "flake-utils": "flake-utils",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "vim-partedit": "vim-partedit"
       }
     },
     "systems": {
@@ -52,6 +53,22 @@
       "original": {
         "owner": "nix-systems",
         "repo": "default",
+        "type": "github"
+      }
+    },
+    "vim-partedit": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1703160523,
+        "narHash": "sha256-FIPSYi7JrOWmMGWTUhFzBovEkae4/sLPKfgbMPODzh8=",
+        "owner": "thinca",
+        "repo": "vim-partedit",
+        "rev": "a4ed06ff7759343d205b4a5be08a5bb49ee878c3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "thinca",
+        "repo": "vim-partedit",
         "type": "github"
       }
     }

@@ -2,6 +2,10 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     flake-utils.url = "github:numtide/flake-utils";
+    vim-partedit = {
+      url = "github:thinca/vim-partedit";
+      flake = false;
+    };
   };
 
   outputs =
@@ -12,9 +16,11 @@
 
         # NOTE: Update this list with the Vim-plugins you want to use.
         vim-pkgs = with inputs; [
+          vim-partedit
         ];
         # NOTE: Update this list with the Nix packages you want to use.
         native-pkgs = with pkgs; [
+          lua-language-server
         ];
 
         pkgs = import inputs.nixpkgs { inherit system; };
